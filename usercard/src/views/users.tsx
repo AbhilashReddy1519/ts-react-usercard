@@ -35,7 +35,7 @@ const Users = () => {
     return (
         <div className="flex relative flex-wrap p-10 justify-around text-[#f8c828] gap-10">
             {data.results.map((result) => {
-                return <UserCard results={result} />;
+                return <UserCard key={result.name.first} results={result} />;
             })}
         </div>
     );
