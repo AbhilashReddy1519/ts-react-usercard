@@ -32,13 +32,13 @@ const Users = () => {
             <h1>Data is null</h1>
         )
     }
-        return (
-            <div className="flex relative flex-wrap p-10 justify-around text-[#f8c828] gap-10">
-                {data.results.map((result) => {
-                    return <UserCard results={result} />;
-                })}
-            </div>
-        );
+    return (
+        <div className="flex relative flex-wrap p-10 justify-around text-[#f8c828] gap-10">
+            {data.results.map((result) => {
+                return <UserCard results={result} />;
+            })}
+        </div>
+    );
 };
 
 export default Users;
